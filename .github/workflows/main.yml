@@ -81,5 +81,5 @@ Ze5icLFcoKtO8AAAAVYXBtb3N5c0BBUE1PU1lTTFQwMjY2AQIDBAUG
 
       - name: Deploy with Docker Compose
         run: |
-          ssh -i ${{ secrets.SERVER_SSH_KEY }} ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} 'cd /path/to/your/app && docker-compose down && docker-compose pull && docker-compose up -d'
+          ssh -i ${{ secrets.SERVER_SSH_KEY }} apmosys@192.168.6.50 'cd /path/to/your/app && docker-compose down && docker-compose pull && docker-compose up -d'
 
