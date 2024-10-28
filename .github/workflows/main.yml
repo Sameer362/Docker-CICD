@@ -37,11 +37,47 @@ jobs:
       - name: SSH to server and copy files
         uses: appleboy/scp-action@v0.1.1
         with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          key: ${{ secrets.SERVER_SSH_KEY }}
+          host: 192.168.6.50
+          username: apmosys
+          key: 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
+
           source: "docker-compose.yml"
-          target: "/path/to/your/app"  # Update with your app's path on the server
+          target: "/home/apmosys/Devops-Project/Docker-CICD"  # Update with your app's path on the server
 
       - name: Deploy with Docker Compose
         run: |
